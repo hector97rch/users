@@ -1,0 +1,14 @@
+Project usuarios {
+  database_type: 'PostgreSQL'
+  Note: '''
+  base de datos de login
+  '''
+}
+Table users {
+  id int [pk]
+  name varchar
+  email varchar
+  password varchar
+  estado boolean
+  note: "tabla que contiene los gestores"
+}
