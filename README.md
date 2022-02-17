@@ -1,19 +1,14 @@
-# Usuarios
+# Instructions for runing the project
 
-To start your Phoenix server:
+* Clone the projec on the server.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Users project.
+    * create an image 
+     in the terminal enter the next command **docker build -t users:0.1.0 .**
+    * run the project 
+    in the terminal enter the next command **docker run --network host users:0.1.0**
+    * stop the project
+    1. in a new terminal enter **docker ps** and copy the id of the users image.
+    2. enter **docker stop id**
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
